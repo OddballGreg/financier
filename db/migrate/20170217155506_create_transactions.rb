@@ -3,7 +3,7 @@ class CreateTransactions < ActiveRecord::Migration[5.0]
     create_table :transactions do |t|
       t.integer :type
       t.datetime :time
-      t.double :amount
+      t.float :amount
       t.string :account
       t.string :client
       t.integer :period
